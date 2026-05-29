@@ -9,23 +9,12 @@
 </head>
 <body>
 
-<img width="200" src="/img/" id="" alt="">
+<img width="200" src="img/" id="" alt="">
 
 <button type="button" id="anterior"><---</button>
 <button type="button" id="siguiente">---></button>
 
-<script>
-    let indice =0;
+<script src="js/carrusel2.js"></script>
 
-    let images = ["img/1.jpg", "img/2.jpg"];
-
-
-    document.getElementById("siguiente").addEventListener("click",()=>{
-        if (indice < 5) {
-            indice++;
-        }
-        document.getElementById("img").setAttribute("src",images[indice]);
-    });
-</script>
 </body>
 </html>
