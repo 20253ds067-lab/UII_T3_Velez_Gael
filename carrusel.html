@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<img width="200" src="/img/" id="" alt="">
+
+<button type="button" id="anterior"><---</button>
+<button type="button" id="siguiente">---></button>
+
+<script>
+    let indice =0;
+
+    let images = ["img/1.jpg", "img/2.jpg"];
+
+
+    document.getElementById("siguiente").addEventListener("click",()=>{
+        if (indice < 5) {
+            indice++;
+        }
+        document.getElementById("img").setAttribute("src",images[indice]);
+    });
+</script>
+</body>
+</html>
